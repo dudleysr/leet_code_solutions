@@ -6,7 +6,7 @@ def longest_common_prefix(strs)
 	return strs[0] if strs.length == 1
 
 	# Sort by length to get shortest string
-	strs.sort_by! { |str| str.length }
+	# strs.sort_by! { |str| str.length }
 	result = ""
 	# Iterate over each character of shortest string
 	strs[0].each_char.with_index do |char, n|
